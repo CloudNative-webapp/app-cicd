@@ -1,0 +1,6 @@
+AWS_ACCOUNT_ID = "762020531997"
+AWS_REGION = "us-east-1"
+CODE_DEPLOY_APPLICATION_NAME = "csye6225-webapp"
+username_ami = "ghactions-app"
+aws_profile = "dev"
+S3_BucketName = "codedeploy.dev.snehalchavan-me"
