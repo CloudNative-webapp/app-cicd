@@ -3,12 +3,17 @@ variable "AWS_REGION" {
   type        = string
 }
 
+variable "domainName" {
+  description = "Domain name"
+  type        = string
+}
+
 variable "aws_profile" {
   description = "Aws profile"
   type        = string
 }
 
-variable "username_ami" {
+variable "username_iam" {
   description = "Aws user name"
   type        = string
 }
@@ -25,5 +30,10 @@ variable "S3_BucketName" {
 
 variable "CODE_DEPLOY_APPLICATION_NAME" {
   description = "code deploy application name"
+  type        = string
+}
+
+variable "s3bucketNameImage" {
+  description = "S3 Bucket Name image"
   type        = string
 }
