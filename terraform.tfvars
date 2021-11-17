@@ -1,8 +1,0 @@
-AWS_ACCOUNT_ID = "086496750442"
-AWS_REGION = "us-east-1"
-CODE_DEPLOY_APPLICATION_NAME = "csye6225-webapp"
-username_iam = "ghactions-app"
-aws_profile = "prod"
-S3_BucketName = "codedeploy.prod.snehalchavan-me"
-domainName = "prod.snehalchavan.me"
-s3bucketNameImage="imagebucket-prod-snehalchavan-me"
