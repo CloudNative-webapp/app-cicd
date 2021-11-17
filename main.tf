@@ -218,6 +218,11 @@ resource "aws_iam_role_policy_attachment" "CodeDeploy-EC2-S3" {
   policy_arn =  aws_iam_policy.CodeDeploy-EC2-S3.arn
 }
 
+resource "aws_iam_role_policy_attachment" "CloudWatchAgentServer" {
+  role       = aws_iam_role.CodeDeployEC2ServiceRole.name
+  policy_arn = "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"
+}
+
 # Attach the policy for CodeDeploy role for webapp
 resource "aws_iam_role_policy_attachment" "AWSCodeDeployRole" {
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSCodeDeployRole"
